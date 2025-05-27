@@ -1,0 +1,267 @@
+/* Estilo general para ambos headers */
+.header,
+.dashboard-header {
+  background-color: aquamarine;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  flex-wrap: wrap;
+}
+
+.header-left,
+.dashboard-left {
+  display: flex;
+  align-items: center;
+}
+
+.dashboard-logo {
+  width: 3cm;
+  height: 3cm;
+  margin-right: 1rem;
+}
+
+.logo-text {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #004d40;
+  margin-right: 1rem;
+}
+
+.welcome-text {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #004d40;
+}
+
+/* Navegación en ambos headers */
+.header-nav,
+.dashboard-nav .nav-buttons {
+  display: flex;
+  align-items: center;
+}
+
+.header-nav button,
+.dashboard-nav button {
+  background-color: aquamarine;
+  color: #004d40;
+  border: none;
+  padding: 0.5rem 1rem;
+  margin-left: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.header-nav button:hover,
+.dashboard-nav button:hover {
+  background-color: #76d7c4;
+}
+
+/* Menú desplegable */
+.user-menu {
+  position: relative;
+}
+
+.user-menu .dropdown {
+  position: absolute;
+  top: 110%;
+  right: 0;
+  background-color: white;
+  border: 1px solid #ddd;
+  padding: 0.5rem;
+  min-width: 150px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+}
+
+.user-menu .dropdown button {
+  width: 100%;
+  text-align: left;
+  background: none;
+  border: none;
+  color: #004d40;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.user-menu .dropdown button:hover {
+  background-color: #f0f0f0;
+}
+
+.welcome-text {
+  font-size: 1.4rem; /* aumentado */
+  font-weight: 600;
+  color: #0066FF; /* nuevo color */
+  font-family: 'Segoe UI', 'Roboto', 'Helvetica', sans-serif;
+}
+
+.logo-home {
+  width: 200px;
+  height: 200px;
+}
+
+.home-centered-logo {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("../assets/hydro_logo.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 10cm 10cm;
+}
+
+.auth-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(255, 255, 255, 0.85);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.auth-form {
+  position: relative;
+  background-color: white;
+  border: 2px solid #76d7c4;
+  padding: 2rem;
+  border-radius: 8px;
+  width: 320px;
+  font-family: 'Segoe UI', 'Roboto', sans-serif;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.auth-form h2 {
+  text-align: center;
+  color: #76d7c4;
+  margin-bottom: 1rem;
+}
+
+.auth-form input {
+  display: block;
+  width: 100%;
+  margin-bottom: 1rem;
+  padding: 0.6rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.auth-button {
+  width: 100%;
+  padding: 0.6rem;
+  font-weight: bold;
+  color: white;
+  background-color: #76d7c4;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.auth-button:hover {
+  background-color: #76d7c4;
+}
+
+.switch-mode {
+  margin-top: 1rem;
+  background: none;
+  border: none;
+  color: #76d7c4;
+  cursor: pointer;
+  font-size: 0.95rem;
+  text-align: center;
+  width: 100%;
+}
+
+.auth-close {
+  position: absolute;
+  top: 10px;
+  right: 12px;
+  background: none;
+  border: none;
+  font-size: 1.4rem;
+  color: #888;
+  cursor: pointer;
+}
+
+.auth-close:hover {
+  color: #000;
+}
+
+.home-background {
+  background-image: url("../assets/hydro_logo.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 400px 400px; /* <-- aquí el cambio */
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+
+.sobre-nosotros-box {
+  background-color: rgba(118, 215, 196, 0.85); /* #76d7c4 con opacidad */
+  padding: 2rem;
+  border-radius: 10px;
+  max-width: 800px;
+  color: #004d40;
+  font-family: 'Segoe UI', 'Roboto', sans-serif;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.sobre-nosotros-box h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.sobre-nosotros-box p {
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+.sobre-nosotros-box ul {
+  margin-bottom: 1rem;
+  padding-left: 1.2rem;
+}
+
+.sobre-nosotros-box li {
+  margin-bottom: 0.5rem;
+}
+
+.nota-contacto {
+  margin-top: 1.5rem;
+  font-size: 0.85rem;
+  color: rgba(0, 0, 0, 0.5);
+  font-style: italic;
+  text-align: center;
+}
+
+.sensor-chart-container {
+  background-color: white;
+  border: 2px solid #76d7c4;
+  padding: 1.5rem;
+  border-radius: 10px;
+  margin: 2rem auto;
+  max-width: 900px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', 'Roboto', sans-serif;
+}
+
+.sensor-chart-container h3 {
+  color: #0066FF;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.sensor-chart {
+  background-color: #f9f9f9;
+  padding: 1rem;
+  border-radius: 8px;
+}
